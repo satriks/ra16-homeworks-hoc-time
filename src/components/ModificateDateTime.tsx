@@ -5,7 +5,7 @@ import React from 'react'
 export default function ModificateDateTime(Component : React.ElementType, date : string){
 
     const dateLabel = (date : string) => {
-
+   
         const dif = moment() - moment(date)
  
         let res = `${Math.floor(dif / (1000 * 60 *60 * 24))} дней назад`
@@ -27,16 +27,9 @@ export default function ModificateDateTime(Component : React.ElementType, date :
             )
         }
     }
-
-    
     }
 
     
-    // console.log(Components);
-    // console.log(date);
-    // console.log(moment());
-    // console.log(moment(date));
-    // console.log(moment() - moment(date));
-    // console.log(moment() - moment().add(1, "h"));
+
     
     
